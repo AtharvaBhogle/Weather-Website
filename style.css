@@ -1,10 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: hsla(180, 89%, 71%, 0.875);
+  background-color: hsl(216, 33%, 97%);
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: background 1s ease-in-out;
 }
 .weatherForm {
   margin: 20px 20px;
@@ -35,7 +36,7 @@ button[type="submit"]:hover {
 }
 
 .card {
-  background: linear-gradient(140deg, hsl(194, 91%, 60%), hsl(69, 80%, 54%));
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.467);
   min-width: 300px;
   display: flex;
@@ -45,6 +46,7 @@ button[type="submit"]:hover {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border-radius: 15px;
+  margin-top: 25px;
 }
 
 h1 {
@@ -64,11 +66,11 @@ p {
   font-weight: bold;
 }
 
-.humidity,
-.description {
+.humidityDisplay,
+.descriptionDisplay {
   font-weight: bold;
 }
-.description {
+.descriptionDisplay {
   font-style: italic;
 }
 
